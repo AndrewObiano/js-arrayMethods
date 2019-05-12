@@ -14,7 +14,10 @@
 
 var hof = ["Jordan", "Bird", "Kobe", "Duncan", "Iverson", "Bonner"];
 
-
+hof.pop();
+var notHof = "Bonner";
+console.log(notHof);
+console.log(hof);
 
 /* The array.push() adds one or more element to the end of an array and returns the new length of the array*/
 
@@ -22,8 +25,8 @@ var hof = ["Jordan", "Bird", "Kobe", "Duncan", "Iverson", "Bonner"];
 
 var shoppingList = ["cool ranch doritos", "kings hawaiian sweet bread", "peanut butter oreos", "fruit loops cereal"];
 
-
-
+shoppingList.push("Hendricks gin");
+console.log(shoppingList);
 
 /*The array.reverse() reverses the order of the element of an array in place - the first becomes the last and the last becomes the first*/
 
@@ -31,7 +34,8 @@ var shoppingList = ["cool ranch doritos", "kings hawaiian sweet bread", "peanut 
 
 var yoda = ["try", "no", "is", "there", "not", "do", "or", "do"];
 
-
+yoda.reverse();
+console.log(yoda);
 
 /*The array.shift() removes the first element from an array and returns that array*/
 
@@ -39,13 +43,15 @@ var yoda = ["try", "no", "is", "there", "not", "do", "or", "do"];
 
 var waitList = ["Chance the Rapper", "Khalid", "Tay-Tay", "Barry Manilow", "Piko Taro"];
 
-
+waitList.shift();
+console.log(waitList);
 
 /*The array.unshift() adds one or more elements to the front of an array and returns the new length of the array*/
 
 /*5. Apparently, you didn't do a good job with crowd control in the previous exercise. Kanye just cut in front of everyone!. Add Kanye to the waitList array above. Console.log waitList*/
 
-
+waitList.unshift("Kanye");
+console.log(waitList);
 
 /*The array.splice() adds and/or removes elements from an array.
 array.splice(index, how many items to be removed)*/
@@ -54,7 +60,8 @@ array.splice(index, how many items to be removed)*/
 
 var testMenu = ["McPizza Burger", "McFly Burger", "McLinguine", "McChar-Siu Bau", "McChop-Chae", "McPancit"];
 
-
+testMenu.splice(2, 2);
+console.log(testMenu);
 
 /*=============================================================*/
 
@@ -67,7 +74,8 @@ var testMenu = ["McPizza Burger", "McFly Burger", "McLinguine", "McChar-Siu Bau"
 var westSide = ["Dre", "2Pac", "Snoop"];
 var eastSide = ["Biggie", "Diddy", "Craig Mack"];
 
-
+var oneLove = westSide.concat(eastSide);
+console.log(oneLove);
 
 /*The array.join() joins all the elements of an array into a string.*/
 
@@ -75,7 +83,8 @@ var eastSide = ["Biggie", "Diddy", "Craig Mack"];
 
 var shoe = ["just", "do", "it"];
 
-
+var shoeString = shoe.join();
+console.log(shoeString);
 
 /*The array.slice() extracts a section of an array and returns a new array.
 array.slice(index start, index end)*/
@@ -85,7 +94,5 @@ array.slice(index start, index end)*/
 
 var fbFriends = ["Khalid", "Yeezy", "Kimmy K", "Lamar Odom", "Lebron", "Warren Buffet"];
 
-
-
-
-
+var unFriend = fbFriends.slice(1, 4);
+console.log(unFriend);
